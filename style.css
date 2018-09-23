@@ -9,11 +9,6 @@ body, html{
 
 .jumbotron-fluid {
     background: #ffffff;
-    margin: auto auto;
-    width: 80%;
-    height: 100%;
-    opacity: .9;
-    position: relative;
  }
 
  .jumbotron-fluid .navbar {
@@ -22,6 +17,10 @@ body, html{
 
  .container {
     padding: 110px 0;
+ }
+
+ .custome-input {
+     
  }
 
  h1 {
@@ -45,9 +44,9 @@ body, html{
     background-color: #0F81E8;
  }
  
- footer p {
+ /* footer p {
      margin: 0;
- }
+ } */
 
  footer .navbar {
      padding: 0 1rem;
