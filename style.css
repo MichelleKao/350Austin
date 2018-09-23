@@ -1,5 +1,4 @@
 body {
-    background-image: url("flowers.gif");
     background-size: 1500px 700px;
 }
 
@@ -20,7 +19,10 @@ body, html{
  }
 
  .custome-input {
-
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid yellow;
  }
 
  h1 {
