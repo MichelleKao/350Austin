@@ -27,8 +27,12 @@
     <div class="jumbotron-fluid">
 
         <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-            <a class="navbar-brand" href="#">Austin 350</a>
+            <a class="navbar-brand" href="#">
+                <img src="images/top-nav-logo.png" style="width: 150px;" />
+            </a>
+
             <div class="mr-auto"></div>
+
             <button class="btn my-2 my-sm-0" type="submit" style="background-color: #0F81E8;">
                 <i class="fas fa-search" style="color: #ffffff"></i>
             </button>
@@ -36,7 +40,6 @@
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars" style="color: #ffffff"></i>
-                <!-- <span class="navbar-toggler-icon" style="color: #ffffff"></span> -->
             </button>
 
         </nav>
@@ -56,27 +59,30 @@
                 information below and we will reach out with 
                 details and times for our next strategic meeting.
                 </div>
+
                 <div class="col-6">
                     <form>
-                        <div class="form-group row">
-                            <div class="col-6">
-                                <input type="zipCode" class="form-control" id="zipCode" placeholder="Type in Zipcode">
-                            </div>
+                        <div class="form-group">
+                            <input type="text" class="custome-input" id="name-input" aria-describedby="emailHelp" placeholder="Name">
                         </div>
-                        <div class="form-group row">
-                            <div class="col-6">
-                                <button type="submit" class="btn btn-primary">Search</button>
-                            </div>
+                        <div class="form-group">
+                            <input type="email" class="custome-input" id="email-input" aria-describedby="emailHelp" placeholder="Email">
                         </div>
-
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
             </div> <!-- .row -->
         </div> <!-- .container -->
         <footer>
-            <nav class="navbar navbar-light">
-                <p class="hosted-by"> Hosted by: Austin Plant Moms</p>
-                <a class="contact" href="#"><a href="mailto:someone@example.com"> atxplantmoms@gmail.com</a>
+            <nav class="navbar" style="background-color: #0C6ABF;">
+                <p>
+                    <img src="images/footer-media-icons.png" >
+                </p>
+                <!-- <a class="contact" href="#"><a href="mailto:someone@example.com"> atxplantmoms@gmail.com</a> -->
             </nav>
         </footer>
     </div> <!-- .jumbotron -->
