@@ -1,0 +1,65 @@
+body {
+    background-image: url("flowers.gif");
+    background-size: 1500px 700px;
+}
+
+body, html{
+    height: 100%
+}
+
+.jumbotron-fluid {
+    background: #96A876;
+    margin: auto auto;
+    width: 80%;
+    height: 100%;
+    opacity: .9;
+    position: relative;
+ }
+
+ .container {
+    padding: 110px 0;
+ }
+
+ h1 {
+    color: #F2F3F4;
+    text-align: center;
+    font-family: 'Shrikhand', cursive;
+ }
+
+ aside {
+    color: #F2F3F4;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+ }
+ 
+ footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #96A876;
+ }
+ 
+ footer p {
+     margin: 0;
+ }
+
+ footer .navbar {
+     padding: 0 1rem;
+ }
+/* 
+ footer{
+     position: absolute;
+     bottom: 0;
+ } */
+/* 
+ .hosted-by {
+    margin-left: 140px;
+    margin-bottom: 10px;
+ }
+
+ .contact {
+     margin-right: 500px;
+
+ /* }
