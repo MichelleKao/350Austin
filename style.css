@@ -54,6 +54,10 @@ body, html{
     padding: 0 1rem;
     background-color: #0C6ABF;
  }
+
+ .btn btn-primary {
+     background: FFA902; 
+ }
 /* 
  footer{
      position: absolute;
