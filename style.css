@@ -53,8 +53,9 @@ body, html{
     font-family: 'Shrikhand', cursive;
  }
 
- #share-btn {
-     color: white;
+ .share-btns {
+    background-color: white;
+    word-wrap: break-word;
  }
 
  footer {

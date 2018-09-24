@@ -47,16 +47,16 @@ function init() {
 }
 
 function composeShareAndCalendar() {
-    $shareAndCalendar = $('<div></div>');
-    const btns = ['share', 'add-to-calendar'];
-    btns.forEach(txt => {
-        const cleanTxt = txt.split(' ').join('') 
+    $shareAndCalendar = $('<div></div>').attr('id', 'share-and-calendar');
+    const btns = [{ id: 'share', title: "Share" }, { id: 'add-to-calendar', title: "Add to Calendar" }];
+    btns.forEach(obj => {
         $shareAndCalendar
-            .append(`<button><img src="images/${txt}.png" style="width: 30px;"></button>`)
+            .append(`<button><img src="images/${obj.id}.png" style="width: 30px;">
+                <b class="flex-wrap">${obj.title}</b>
+                </button>`)
             .find('button:not(.share-btns)')
-            // .html(txt)
-            .attr('id', cleanTxt)
-            .addClass('btn mx-1 share-btns');
+            .attr('id', obj.id)
+            .addClass('btn share-btns col-4');
     });
     return $shareAndCalendar;
 }
@@ -87,11 +87,13 @@ function addShareEvent() {
         evt.preventDefault();
         if (clicked) {
             $('#share-opts').remove();
-            $("#AddToCalendar").html('Add To Calendar');
+            $('#share').append('<b>Share</b>').css('font-wight', '800');
+            $('#add-to-calendar').append('<b>Add to Calendar</b>');
             clicked = false;
         } else {
             $(this).after(window.composeShareOptions());
-            $("#AddToCalendar").html('Cal');
+            $('#share-and-calendar').find('b').remove();
+            $('#share-and-calendar').find('.share-btns').removeClass('col-4');
             clicked = true;
         }
     })   
