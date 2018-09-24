@@ -46,45 +46,55 @@
 
 
         <div class="container">
-            <h1>Fayette Power Plant</h1>
+            <h1 id="container-title">Fayette Power Plant</h1>
             <div class="d-flex">
-                <div class="row justify-content-center no-padding">
+                <div class="row no-padding">
+                    <div id="container-wrapper" class="col-xs-6 col-sm-6 col-md-6 col-lg-6"  style="color: #17292E; font-family: 'Raleway'">                  
+                        <div id="container-content-1" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 my-3">
+                            <span>
+                                We are excited that you are joining us in our 
+                                mission to push Austin city officials to shut 
+                                down the power plant! Enter your contact 
+                                information below and we will reach out with 
+                                details and times for our next strategic meeting.
+                            </span>
+                        </div>
 
-                    <div class="col-6 justify-content-center" id="text" style="color: #17292E; font-family: 'Raleway'">
-                        <span>
-                            We are excited that you are joining us in our 
-                            mission to push Austin city officials to shut 
-                            down the power plant! Enter your contact 
-                            information below and we will reach out with 
-                            details and times for our next strategic meeting.
-                        </span>
-
-                        <form class="justify-content-center">
-                            <div class="form-group">
-                                <input type="text" class="custome-input" id="name-input" aria-describedby="emailHelp" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="custome-input" id="email-input" aria-describedby="emailHelp" placeholder="Email">
-                            </div>
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
+                        <div id="container-content-2" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 my-3">
+                            <form id="sign-up-form" class="justify-content-center">
+                                <div class="form-group">
+                                    <input type="text" class="custome-input" id="name-input" aria-describedby="emailHelp" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="custome-input" id="email-input" aria-describedby="emailHelp" placeholder="Email">
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Sign up to recieve our newsletter!</label>
+                                </div>
+                                <button id="get-involved-btn" type="submit" class="btn btn-primary">Get Involved</button>
+                            </form>
+                        </div>
                     </div>
 
                 </div>
             </div> 
         </div> <!-- .container -->
+        
+
+   
+    </div> <!-- .jumbotron -->
         <footer>
             <nav class="navbar" style="background-color: #0C6ABF;">
                 <p>
-                    <img src="images/footer-media-icons.png" >
+                    <img src="images/footer-media-icons.png">
                 </p>
             </nav>
         </footer>
-    </div> <!-- .jumbotron -->
+
+    <script src="index.js"></script>
 </body>
+
+
 
 </html>

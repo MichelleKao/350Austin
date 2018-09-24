@@ -18,12 +18,54 @@ body, html{
     padding: 110px 0;
  }
 
- .custome-input {
+ input[type=text], textarea {
+  border: 0;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  min-height: 20px;
+  background: transparent;
+  /* padding: 3px 0px 3px 3px; */
+  padding: 0;
+  /* margin: 5px 1px 3px 0px; */
+  border-bottom: 1px solid black;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 1px 0 0 yellow;
+  /* padding: 3px 0px 3px 3px; */
+  /* margin: 5px 1px 3px 0px; */
+  border-bottom: 1px solid yellow;
+}
+
+input[type=text]::-webkit-input-placeholder {
+    color: #999;
+}
+input[type=text]:focus::-webkit-input-placeholder {
+    color: red;
+    transform: scale(.75) translate(0, -10px);
+    transition: all 0.3s;
+}
+
+ /* .custome-input {
     border: 0;
     outline: 0;
     background: transparent;
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid black;
+    padding: 0;
+    min-height: 18px;
+    font-size: inherit;
+    resize: none;
+    display: flex;
+    align-items: center;
+    color: black;
  }
+
+ .custome-input:focus {
+    border-bottom: 1px solid yellow;
+ } */
 
  h1 {
     color: #17292E;
