@@ -5,7 +5,7 @@
     <title>Fayette Power Plant Get Involved!</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
@@ -24,8 +24,8 @@
 
 <body>
 
-    <div class="jumbotron-fluid">
-
+    <div class="home-wrapper">
+        <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light sticky-top">
             <a class="navbar-brand" href="#">
                 <img src="images/top-nav-logo.png" style="width: 150px;" />
@@ -44,54 +44,47 @@
 
         </nav>
 
-
+        <!-- container -->
         <div class="container">
-            <h1 id="container-title">Fayette Power Plant</h1>
-            <div class="d-flex">
-                <div class="row no-padding">
-                    <div id="container-wrapper" class="col-xs-6 col-sm-6 col-md-6 col-lg-6"  style="color: #17292E; font-family: 'Raleway'">                  
-                        <div id="container-content-1" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 my-3">
-                            <span>
-                                We are excited that you are joining us in our 
-                                mission to push Austin city officials to shut 
-                                down the power plant! Enter your contact 
-                                information below and we will reach out with 
-                                details and times for our next strategic meeting.
-                            </span>
-                        </div>
-
-                        <div id="container-content-2" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 my-3">
-                            <form id="sign-up-form" class="justify-content-center">
-                                <div class="form-group">
-                                    <input type="text" class="custome-input" id="name-input" aria-describedby="emailHelp" placeholder="Name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="custome-input" id="email-input" aria-describedby="emailHelp" placeholder="Email">
-                                </div>
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Sign up to recieve our newsletter!</label>
-                                </div>
-                                <button id="get-involved-btn" type="submit" class="btn btn-primary">Get Involved</button>
-                            </form>
-                        </div>
+            <div class="d-flex row no-padding justify-content-center">
+                <div id="container-wrapper" class="col-xs-12 col-sm-12 col-md-10 col-lg-6 pr-0"  style="color: #17292E; font-family: 'Raleway'">                  
+                    <h3 class="px-3" id="container-title">Fayette Power Plant</h3>
+                    <div id="container-content-1" class="col-12 my-3 justify-content-center">
+                        <span>
+                            We are excited that you are joining us in our 
+                            mission to push Austin city officials to shut 
+                            down the power plant! Enter your contact 
+                            information below and we will reach out with 
+                            details and times for our next strategic meeting.
+                        </span>
                     </div>
 
+                    <div id="container-content-2" class="col-12 my-4 justify-content-center">
+                        <form id="sign-up-form">
+                            <div class="form-group">
+                                <input type="text" class="custome-input col-10" id="name-input" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="custome-input col-10" id="email-input" placeholder="Email">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Sign up to recieve our newsletter!</label>
+                            </div>
+                            <button id="get-involved-btn" type="submit" class="btn btn-primary">Get Involved</button>
+                        </form>
+                    </div>
                 </div>
-            </div> 
-        </div> <!-- .container -->
+            </div>
+        </div> 
         
-
-   
-    </div> <!-- .jumbotron -->
-        <footer>
-            <nav class="navbar" style="background-color: #0C6ABF;">
-                <p>
-                    <img src="images/footer-media-icons.png">
-                </p>
-            </nav>
-        </footer>
-
+        <img id="bottom-img" src="images/fayette.png" style="width:100%;">
+            
+        <!-- footer -->
+        <nav class="footer-nav navbar justify-content-center" style="background-color: #0C6ABF;">
+            <img src="images/footer-media-icons.png">
+        </nav>
+    </div>
     <script src="index.js"></script>
 </body>
 
